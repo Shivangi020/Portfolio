@@ -1,10 +1,12 @@
-import Header from "./Components/Header"
+import Home from "./Components/Home"
+import Navbar from "./Components/Navbar"
 
 
 function App() {
  return (
-   <main>
-      <Header/>
+   <main >
+    <Navbar/>
+    <Home/>
   </main>
   )
 }
