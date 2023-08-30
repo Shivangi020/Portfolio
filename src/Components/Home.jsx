@@ -1,4 +1,6 @@
-import React from 'react'
+import {VscGithubAlt} from 'react-icons/vsc' ;
+import {CiLinkedin} from 'react-icons/ci' ;
+
 
 function Home() {
   return (
@@ -9,8 +11,9 @@ function Home() {
          <p>Full Stack Developer</p>
       </div>
       <div className='links-on-home'>
-       <a href='https://github.com/Shivangi020'></a>
-       <a href='www.linkedin.com/in/shivangi-singh-305751192'></a>
+       <a href='https://github.com/Shivangi020'  target='_blank'><VscGithubAlt/></a>
+       <a href='https://www.linkedin.com/in/shivangi-singh-305751192/'  target='_blank'><CiLinkedin/></a>
+       <a href="#" className='resume-btn' target='_blank' >Resume</a>
       </div>
 
     </div>

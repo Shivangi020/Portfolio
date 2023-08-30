@@ -5,10 +5,36 @@
 }
 
 .home-cn{
-    padding-top: 150px;
+    padding-top: 10%;
 
     p{
-        margin: 0 20px;
-        font-size: 7rem;
+        margin: 0 30px;
+        font-size: 6rem;
+    }
+}
+
+.links-on-home{
+    position: absolute;
+    right:  15px;
+    top: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    a{
+        color: #94FC13;
+        font-size: 2.5em;
+    }
+
+    .resume-btn{
+        border: 1.2px solid #94FC13;
+        font-size: 1em;
+        letter-spacing: 0.048em;
+        padding: 5px 10px;
+        text-decoration: none;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -28px;
+        top: 140px;
     }
 }
