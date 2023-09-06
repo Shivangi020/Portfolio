@@ -5,7 +5,7 @@
 }
 
 .home-cn{
-    padding-top: 10%;
+    padding-top: 120px;
 
     p{
         margin: 0 30px;
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    transition: all 3ms;
     
     a{
         color: #94FC13;
@@ -36,5 +37,33 @@
         position: absolute;
         right: -28px;
         top: 140px;
+    }
+}
+
+
+
+// Small screen and down
+@media only screen and (max-width: 640px) {
+ 
+    .links-on-home{
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        padding-left: 20px;
+
+
+     > a:nth-child(1) {
+        font-size: 2.2em;
+        margin-bottom: 6px;
+        margin-right: 6px;
+      }
+        .resume-btn{
+            transform: rotate(0deg);
+            left: 100px;
+            bottom: 15px;
+            right: auto;
+            top: auto;
+            margin-left: 15px;
+        }
     }
 }
