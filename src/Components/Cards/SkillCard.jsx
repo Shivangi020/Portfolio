@@ -7,8 +7,8 @@ const SkillCard = ({title , skillList ,Icon}) => {
       <Icon className='skill-icon'/>
       <p>{title}</p>
       <ul>
-      { skillList.map((skill) => {
-         return <li>{skill}</li>
+      { skillList.map((skill ,index) => {
+         return <li key={index}>{skill}</li>
       })}
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillCard from './SkillCard'
+import SkillCard from './Cards/SkillCard'
 import {CgWebsite} from 'react-icons/cg';
 import {VscTools} from 'react-icons/vsc' ;
 import {MdOutlineSettingsInputComposite} from 'react-icons/md'
@@ -9,7 +9,7 @@ const About = () => {
     <div className='about-cn' id='About'>
 
         <section className='about-s'>
-        <h1>{`{About me}`}</h1>
+        <h1>{`{ About me }`}</h1>
         <h3>I am Shivangi</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
             Alias maxime distinctio quos corporis <br/>
@@ -20,7 +20,7 @@ const About = () => {
    
 
       <section className='skill-s'>
-      <h1>{`{Skills}`}</h1> <span>// Navigating the Web with My Full Stack Skills</span>
+      <h1>{`{ Skills }`}</h1> <span>// Navigating the Web with My Full Stack Skills</span>
       <div className='skill-card-cn'>
       <SkillCard  title="FrontEnd" skillList={['HTML5', 'CSS3' ,'SASS' ,'JavaScript' ,'ReactJS']} Icon={CgWebsite} />
       <SkillCard  title="BackEnd" skillList={['NodeJs', 'Expressjs' , 'RestAPI','MongoDB' ,'SQL']} Icon={VscTools} />

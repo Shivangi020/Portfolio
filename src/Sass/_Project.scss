@@ -1,0 +1,12 @@
+@import 'Variable' ;
+
+.project-cn{
+    background-color: $background;
+    padding-left: $left-space;
+    padding-top: 50px;
+    color: $text-color;
+    
+    h1{
+        @include heading-style;
+    }
+}

@@ -1,8 +1,20 @@
 $hero-background :#032D3C;
 $nav-background :#021F29BD ;
-$text-color: #fff;
-$heading-color: #94fc13;
-$left-space: 50px;
+
+
 $background : #252a34 ;
 $card-background: #22262f;
+
+$text-color: #fff;
+$heading-color: #94fc13;
 $icon-color :rgba(148, 252, 19, 0.44);
+
+$left-space: 50px;
+
+
+@mixin heading-style {
+    margin: 0;
+    color: $heading-color;
+    font-size: 4em;
+    font-weight: 400;
+}
