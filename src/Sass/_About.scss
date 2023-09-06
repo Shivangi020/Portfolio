@@ -1,12 +1,13 @@
-$text-color: #fff;
-$heading-color: #94fc13;
-$left-space: 50px;
+@import  'Variable';
+
 
 .about-cn {
-  background-color: #252a34;
-  height: 100vh;
+  background-color: $background;
 
-  .about-s {
+
+
+  // Common css for both about section and skill section
+  .about-s ,.skill-s{
     padding-top: 50px;
     padding-left: $left-space;
     color: $text-color;
@@ -16,7 +17,11 @@ $left-space: 50px;
       font-size: 4em;
       font-weight: 400;
     }
+  }
 
+
+  // About me section other css
+  .about-s{
     h3 {
       margin: 0;
       font-weight: 400;
@@ -34,4 +39,22 @@ $left-space: 50px;
       text-align: justify;
     }
   }
+
+
+
+  // Skill section other css
+  .skill-s{
+    
+
+    .skill-card-cn{
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      margin-top: 50px;
+      margin-right: 50px;
+    }
+
+  }
 }
+
+

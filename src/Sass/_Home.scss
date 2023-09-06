@@ -1,7 +1,10 @@
+@import 'Variable';
+
+
 #Home{
-    height: 100vh;
-    background-color: #032D3C;
-    color: #94FC13;
+    min-height: 700px;
+    background-color: $hero-background;
+    color: $heading-color;
 }
 
 .home-cn{
@@ -23,12 +26,12 @@
     transition: all 3ms;
     
     a{
-        color: #94FC13;
+        color: $heading-color;
         font-size: 2.5em;
     }
 
     .resume-btn{
-        border: 1.2px solid #94FC13;
+        border: 1.2px solid $heading-color;
         font-size: 1em;
         letter-spacing: 0.048em;
         padding: 5px 10px;
