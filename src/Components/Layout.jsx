@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import About from './About'
 import Project from './Project'
+import Contact from './Contact'
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
     <Home/>
     <About/>
     <Project/>
+    <Contact/>
     </main>
   )
 }
