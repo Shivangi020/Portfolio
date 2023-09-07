@@ -17,9 +17,11 @@
 }
 
 .links-on-home{
-    position: absolute;
+    // position: absolute;
+    //  top: 35vh;
+    position: fixed;
+    top: 150px;
     right:  15px;
-    top: 35vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

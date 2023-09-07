@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+$heading-font : 'Goldman', cursive;
+$paragraph-font : 'Lato', sans-serif;
+
 $hero-background :#032D3C;
 $nav-background :#021F29BD ;
-
-
 $background : #252a34 ;
 $card-background: #22262f;
 
@@ -11,6 +14,7 @@ $icon-color :rgba(148, 252, 19, 0.44);
 
 $left-space: 50px;
 
+$image-overlay-color :rgba(34, 38, 47, 0.88);
 
 @mixin heading-style {
     margin: 0;

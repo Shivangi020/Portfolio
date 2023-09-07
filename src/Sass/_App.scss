@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import  'Variable';
+
 
 *{
   box-sizing: border-box;
-  font-family: 'Goldman', cursive;
+  font-family: $heading-font
 }
 
 html{

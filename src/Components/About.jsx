@@ -24,7 +24,7 @@ const About = () => {
       <div className='skill-card-cn'>
       <SkillCard  title="FrontEnd" skillList={['HTML5', 'CSS3' ,'SASS' ,'JavaScript' ,'ReactJS']} Icon={CgWebsite} />
       <SkillCard  title="BackEnd" skillList={['NodeJs', 'Expressjs' , 'RestAPI','MongoDB' ,'SQL']} Icon={VscTools} />
-      <SkillCard  title="Other Tools" skillList={['Git', 'Netlify' ,'Figma' ,'Testing']} Icon={MdOutlineSettingsInputComposite} />
+      <SkillCard  title="Other Tools" skillList={['Git', 'Deployment' ,'Figma' ,'Testing']} Icon={MdOutlineSettingsInputComposite} />
       </div>
      </section>
     </div>

@@ -2,11 +2,19 @@
 
 .project-cn{
     background-color: $background;
-    padding-left: $left-space;
-    padding-top: 50px;
+    padding: 50px;
     color: $text-color;
+  
     
     h1{
         @include heading-style;
+    }
+
+    .project-card-cn{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        margin: 50px;
+        
     }
 }
