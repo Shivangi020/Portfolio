@@ -1,8 +1,49 @@
-@import 'Variable' ;
+@import "Variable";
 
+.contact-cn {
+  background-color: $background;
+  padding: 50px;
+  color: $text-color;
 
-.contact-cn{
-    background-color: $background;
-    padding: 50px;
-    color: $text-color;
+  .contact-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      input ,textarea{
+        width: 500px;
+        height: 50px;
+        padding: 5px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        background: $input-background;
+        font-family: $paragraph-font;
+        font-size: 20px;
+        color: $placeholder-color;
+        font-weight: 400;
+      }
+
+      input::placeholder ,textarea::placeholder {
+        color: $placeholder-color;
+        font-family: $paragraph-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      textarea{
+        resize: vertical;
+        max-height: 450px;
+        min-height: 180px;
+      }
+    }
+  }
 }
