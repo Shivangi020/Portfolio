@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectCard from './Cards/ProjectCard'
-import project1 from '../assets/1.png'
-import project2 from '../assets/2.png'
-import project3 from '../assets/3.png'
-import project4 from '../assets/4.png'
+import project1 from '../assets/glowupPoster.png'
+import project2 from '../assets/meterosPoster.png'
+import project3 from '../assets/pomodoroPoster.png'
+import project4 from '../assets/decortalePoster.png'
 
 const Project = () => {
   return (
