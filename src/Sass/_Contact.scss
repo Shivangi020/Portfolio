@@ -16,7 +16,8 @@
       flex-direction: column;
       gap: 30px;
 
-      input ,textarea{
+      input,
+      textarea {
         width: 500px;
         height: 50px;
         padding: 5px;
@@ -30,7 +31,8 @@
         font-weight: 400;
       }
 
-      input::placeholder ,textarea::placeholder {
+      input::placeholder,
+      textarea::placeholder {
         color: $placeholder-color;
         font-family: $paragraph-font;
         font-size: 20px;
@@ -39,10 +41,20 @@
         line-height: normal;
       }
 
-      textarea{
+      textarea {
         resize: vertical;
         max-height: 450px;
         min-height: 180px;
+      }
+
+      .input-btn {
+        align-self: center;
+        width: 170px;
+        border-radius: 2px;
+        border: 3px solid $heading-color;
+        background: inherit;
+        color: $heading-color;
+        cursor: pointer;
       }
     }
   }

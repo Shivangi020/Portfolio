@@ -10,11 +10,11 @@ const Contact = () => {
       />
       <section className="contact-s">
         <form className="contact-form">
-          <input type="text" name="from_name" placeholder="Name"/>
-          <input type="email" name="from_email" placeholder="Your Email" />
+          <input type="text" name="from_name" placeholder="Name" required />
+          <input type="email" name="from_email" placeholder="Email" required />
           <input type="text" name="subject" placeholder="Subject" />
-          <textarea name="html_message" placeholder="Message"></textarea>
-          <input type="submit" value="Send" />
+          <textarea name="html_message" placeholder="Message" required></textarea>
+          <input type="submit" value="Stay Connected"  className="input-btn"/>
         </form>
       </section>
     </div>
