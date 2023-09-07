@@ -6,10 +6,6 @@
     color: $text-color;
   
     
-    h1{
-        @include heading-style;
-    }
-
     .project-card-cn{
         display: flex;
         gap: 50px;

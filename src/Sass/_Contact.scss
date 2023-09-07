@@ -5,8 +5,4 @@
     background-color: $background;
     padding: 50px;
     color: $text-color;
-
-    h1{
-        @include heading-style ;
-    }
 }

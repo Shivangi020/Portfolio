@@ -1,0 +1,10 @@
+@import 'Variable' ;
+
+.heading{
+    @include heading-style ;
+}
+
+.h1-span{
+    font-size: 20px;
+    letter-spacing: 0.023em;
+}
