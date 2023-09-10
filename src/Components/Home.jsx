@@ -7,8 +7,8 @@ function Home() {
     <div id='Home'>
       <div className='home-cn'>
          <p>{`<Hello/>`} ,</p>
-         <p>I am a Full Stack</p>
-         <p> Developer</p>
+         <p>I am a </p>
+         <p>Full Stack Developer</p>
       </div>
       <div className='links-on-home'>
        <a href='https://github.com/Shivangi020'  target='_blank'><VscGithubAlt/></a>

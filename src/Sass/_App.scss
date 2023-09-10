@@ -17,3 +17,23 @@ html, body {
 main{
   height: 200vh;
 }
+
+
+.footer{
+  background-color: $background;
+  color: $text-color;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  p{
+    margin: 0;
+    font-size: 19px;
+    letter-spacing: 0.05em;
+  }
+
+  span{
+    margin-right: 5px;
+    align-self: baseline;
+  }
+}

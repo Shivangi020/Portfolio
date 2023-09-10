@@ -4,6 +4,7 @@ import Home from './Home'
 import About from './About'
 import Project from './Project'
 import Contact from './Contact'
+import Footer from './Footer'
 
 const Layout = () => {
   return (
@@ -13,6 +14,7 @@ const Layout = () => {
     <About/>
     <Project/>
     <Contact/>
+    <Footer/>
     </main>
   )
 }
