@@ -1,17 +1,18 @@
 @import "Variable";
 
 #Home {
-  // min-height: 700px;
   background-color: $hero-background;
   color: $heading-color;
   background: url(../assets/Background2.png);
   background-size: cover;
   background-attachment: fixed;
   border: none;
+  text-align: center;
 }
 
 .home-cn {
   padding-top: 120px;
+  padding-bottom: 50px;
 
   p {
     margin: 0 30px;
@@ -48,8 +49,7 @@
 
 // Small screen and down
 @media only screen and (max-width: 640px) {
-  #Home {
-  }
+ 
   .home-cn {
     p {
       font-size: 5rem;

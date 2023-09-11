@@ -11,7 +11,7 @@ const About = () => {
     <div className='about-cn' id='About'>
 
         <section className='about-s'>
-        {/* <img src={avatar}></img> */}
+        <img src={avatar} className='avatar'></img>
         <Heading heading={'About me'}/>
         <h3>I am Shivangi</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>

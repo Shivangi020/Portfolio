@@ -1,21 +1,21 @@
-@import  'Variable';
-
+@import "Variable";
 
 .about-cn {
   background-color: $background;
 
-
-
   // Common css for both about section and skill section
-  .about-s ,.skill-s{
-    padding-top: 50px;
+  .about-s,
+  .skill-s {
+    padding-top: 80px;
     padding-left: $left-space;
     color: $text-color;
   }
 
-
   // About me section other css
-  .about-s{
+  .about-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h3 {
       margin: 0;
       font-weight: 400;
@@ -30,27 +30,28 @@
       font-size: 21px;
       font-weight: 300;
       letter-spacing: 0.05em;
-      text-align: justify;
+      text-align: center;
       font-family: $paragraph-font;
+    }
+
+    .avatar {
+      width: 250px;
+      border: 3px solid $avatar-border-color;
+      border-radius: 100%;
     }
   }
 
-
-
   // Skill section other css
-  .skill-s{
-    
-
-    .skill-card-cn{
+  .skill-s {
+    text-align: center;
+    .skill-card-cn {
       display: flex;
       gap: 50px;
       justify-content: center;
       margin-top: 50px;
       margin-right: 50px;
       padding-bottom: 50px;
-    }
 
+    }
   }
 }
-
-
