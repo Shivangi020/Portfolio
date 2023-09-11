@@ -9,6 +9,8 @@
   height: 380px;
   padding: 20px;
   text-align: center;
+  border: 2px solid $avatar-border-color;
+  z-index: 1;
 
   .skill-icon{
     font-size: 3.3em;

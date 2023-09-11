@@ -6,9 +6,10 @@
   // Common css for both about section and skill section
   .about-s,
   .skill-s {
-    padding-top: 80px;
-    padding-left: $left-space;
+    padding: 80px 50px 0px 50px;
     color: $text-color;
+    position: relative;
+    z-index: 1;
   }
 
   // About me section other css
@@ -20,18 +21,17 @@
       margin: 0;
       font-weight: 400;
       font-size: 3.5em;
-      padding-left: $left-space;
       letter-spacing: 0.066em;
     }
 
     p {
-      padding-left: $left-space;
       line-height: 1.4;
-      font-size: 21px;
+      font-size: 1.313em;
       font-weight: 300;
       letter-spacing: 0.05em;
       text-align: center;
       font-family: $paragraph-font;
+      padding: 6px 16px;
     }
 
     .avatar {
@@ -49,9 +49,22 @@
       gap: 50px;
       justify-content: center;
       margin-top: 50px;
-      margin-right: 50px;
       padding-bottom: 50px;
-
     }
   }
+}
+
+
+@media only screen and (max-width: 640px) {
+ 
+.about-cn{
+  .about-s{
+    h3{
+      font-size: 3.1em;
+    }
+    p{
+     font-size: 1em;
+    }
+  }
+}
 }
