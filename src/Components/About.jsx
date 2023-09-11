@@ -4,12 +4,14 @@ import {CgWebsite} from 'react-icons/cg';
 import {VscTools} from 'react-icons/vsc' ;
 import {MdOutlineSettingsInputComposite} from 'react-icons/md'
 import Heading from './Heading';
+import avatar from '../assets/Avatar.jpeg'
 
 const About = () => {
   return (
     <div className='about-cn' id='About'>
 
         <section className='about-s'>
+        {/* <img src={avatar}></img> */}
         <Heading heading={'About me'}/>
         <h3>I am Shivangi</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>

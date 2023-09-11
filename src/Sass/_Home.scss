@@ -1,76 +1,66 @@
-@import 'Variable';
+@import "Variable";
 
+#Home {
+  // min-height: 700px;
+  background-color: $hero-background;
+  color: $heading-color;
+  background: url(../assets/Background2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  border: none;
+}
 
-#Home{
-    min-height: 700px;
-    background-color: $hero-background;
+.home-cn {
+  padding-top: 120px;
+
+  p {
+    margin: 0 30px;
+    font-size: 6rem;
+  }
+}
+
+.links-on-home {
+  position: fixed;
+  top: 150px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: all 3ms;
+
+  a {
     color: $heading-color;
-    background: url(../assets/Background2.png);
-    background-size: cover;
+    font-size: 2.5em;
+  }
+
+  .resume-btn {
+    border: 1.2px solid $heading-color;
+    font-size: 1em;
+    letter-spacing: 0.048em;
+    padding: 5px 10px;
+    text-decoration: none;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -28px;
+    top: 140px;
+  }
 }
-
-.home-cn{
-    padding-top: 120px;
-
-    p{
-        margin: 0 30px;
-        font-size: 6rem;
-    }
-}
-
-.links-on-home{
-    position: fixed;
-    top: 150px;
-    right:  15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    transition: all 3ms;
-    
-    a{
-        color: $heading-color;
-        font-size: 2.5em;
-    }
-
-    .resume-btn{
-        border: 1.2px solid $heading-color;
-        font-size: 1em;
-        letter-spacing: 0.048em;
-        padding: 5px 10px;
-        text-decoration: none;
-        transform: rotate(90deg);
-        position: absolute;
-        right: -28px;
-        top: 140px;
-    }
-}
-
-
 
 // Small screen and down
 @media only screen and (max-width: 640px) {
- 
-    .links-on-home{
-        bottom: 0;
-        left: 0;
-        flex-direction: row;
-        padding-left: 20px;
-        display: none;
-
-     > a:nth-child(1) {
-        font-size: 2.2em;
-        margin-bottom: 6px;
-        margin-right: 6px;
-      }
-        .resume-btn{
-            transform: rotate(0deg);
-            left: 100px;
-            bottom: 15px;
-            right: auto;
-            top: auto;
-            margin-left: 15px;
-        }
+  #Home {
+  }
+  .home-cn {
+    p {
+      font-size: 5rem;
     }
+  }
 }
 
-
+@media only screen and (max-width: 500px) {
+  .home-cn {
+    p {
+      font-size: 4rem;
+    }
+  }
+}
