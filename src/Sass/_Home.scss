@@ -20,22 +20,6 @@
   }
 }
 
-.links-on-home {
-  position: fixed;
-  top: 150px;
-  right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: -2;
-   
-  a {
-    color: $heading-color;
-    font-size: 2.5em;
-  }
-
-
-}
 
 // Small screen and down
 @media only screen and (max-width: 640px) {
