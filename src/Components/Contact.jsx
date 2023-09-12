@@ -5,14 +5,15 @@ import Heading from "./Heading";
 const Contact = () => {
   const form = useRef();
   const [popup , setPopup] = useState(false)
-  const [isSending ,setIsSending] = useState(false)
-  const [isSuccess , setIsSuccess] = useState(false);
-  const [isError , setIsError] = useState(false);
+
+  const [mailAction , setMailAction] = useState({isSending:false , isError:false , isSuccess:false})
+
 
   const sendEmail = (e) => {
     e.preventDefault(); 
-    setIsSending(true);
+    setMailAction({...mailAction,isSending:true})
     setPopup(true)
+
     emailjs.sendForm(
         "service_ckui3z8",
         "template_yxe5bhz",
@@ -21,14 +22,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setIsSuccess(true);
-          setIsSending(false);
-          setIsError(false)
+         setMailAction({...mailAction, isSuccess:true , isError:false , isSending:false})
         },
         (error) => {
-          setIsError(true);
-          setIsSuccess(false)
-          setIsSending(false);
+          setMailAction({...mailAction, isSuccess:false , isError:true , isSending:false})
         }
       );
   };
@@ -40,9 +37,9 @@ const Contact = () => {
         comment={"// Shaping the Future with Your Input"}
       />
     {  popup?<section className="contact-popup">
-      {isSending ?<p>Sending...</p>:<p></p>}
-      {isError ? <p>Something went wrong</p>:<p></p>}
-      {isSuccess ? <p>Great.. Will contact back soon</p>:<p></p>}
+      {mailAction.isSending ?<p>Sending...</p>:<p></p>}
+      {mailAction.isError ? <p>Something went wrong</p>:<p></p>}
+      {mailAction.isSuccess ? <p>Great.. Will contact back soon</p>:<p></p>}
       </section>:<></>}
 
       <section className="contact-s">
