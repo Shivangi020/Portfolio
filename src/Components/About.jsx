@@ -2,11 +2,11 @@ import React from "react";
 import SkillCard from "./Cards/SkillCard";
 import Heading from "./Heading";
 import avatar from "../assets/Avatar.jpeg";
-import { CiLinkedin } from "react-icons/ci";
+import { PiLinkedinLogo } from "react-icons/pi";
 import { CgWebsite } from "react-icons/cg";
 import { VscTools, VscGithubAlt } from "react-icons/vsc";
 import { MdOutlineSettingsInputComposite } from "react-icons/md";
-import { BiLogoGmail } from "react-icons/bi";
+import { GoMail } from "react-icons/go";
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
         <Heading heading={"About me"} />
         <h3>I'm Shivangi</h3>
         <p>
-        An India-based web and software developer ,w ith a strong interest in coding as a
+        An India-based web and software developer ,with a strong interest in coding as a
         means of problem-solving. My experience in the world of technology has been exciting. 
         I derive immense pleasure in converting website designs into functional and visually 
         appealing websites through my coding skills. Witnessing my code's translation into a tangible
@@ -27,7 +27,7 @@ const About = () => {
         </p>
         <div className="links-on-about">
           <a href="mailto: shivangi.singh113qa@gmail.com" className="mail-link">
-            <BiLogoGmail /> <p>shivangi.singh113qa@gmail.com</p>
+            <GoMail/>
           </a>
           <a href="https://github.com/Shivangi020" target="_blank" className="git-link">
             <VscGithubAlt />
@@ -36,7 +36,7 @@ const About = () => {
             href="https://www.linkedin.com/in/shivangi-singh-305751192/"
             target="_blank"
           >
-            <CiLinkedin />
+            <PiLinkedinLogo />
           </a>
           <a href="#" className="resume-btn" target="_blank">
             Resume
