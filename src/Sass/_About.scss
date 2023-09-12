@@ -40,6 +40,15 @@
       border: 3px solid $avatar-border-color;
       border-radius: 100%;
     }
+
+    .resume-btn {
+      border: 2px solid $heading-color;
+      font-size: 1em;
+      letter-spacing: 0.048em;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: $heading-color;
+    }
   }
 
   // Skill section other css

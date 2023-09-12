@@ -13,7 +13,6 @@ function Home() {
       <div className='links-on-home'>
        <a href='https://github.com/Shivangi020'  target='_blank'><VscGithubAlt/></a>
        <a href='https://www.linkedin.com/in/shivangi-singh-305751192/'  target='_blank'><CiLinkedin/></a>
-       <a href="#" className='resume-btn' target='_blank' >Resume</a>
       </div>
 
     </div>

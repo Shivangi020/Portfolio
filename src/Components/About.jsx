@@ -19,6 +19,7 @@ const About = () => {
             sequi, quisquam perspiciatis autem explicabo omnis modi  <br/>
             sint architecto laudantium fugiat officia, facilis minima <br/>
             voluptates laborum porro.</p>
+        <a href="#" className='resume-btn' target='_blank'>Resume</a>
         </section>
    
 
