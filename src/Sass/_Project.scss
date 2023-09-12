@@ -2,15 +2,16 @@
 
 .project-cn{
     background-color: $background;
-    padding: 50px;
+    padding: 80px 50px 50px 50px;
     color: $text-color;
-  
+    text-align: center;
+    
     
     .project-card-cn{
         display: flex;
         gap: 50px;
         justify-content: center;
-        margin: 50px;
-        
+        margin: 60px 0;
+        flex-wrap:wrap; 
     }
 }

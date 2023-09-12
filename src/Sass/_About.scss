@@ -6,10 +6,11 @@
   // Common css for both about section and skill section
   .about-s,
   .skill-s {
-    padding: 80px 50px 0px 50px;
+    padding-top: 80px ;
     color: $text-color;
     position: relative;
     z-index: 1;
+    margin: 0px 50px;
   }
 
   // About me section other css
@@ -50,6 +51,7 @@
       justify-content: center;
       margin-top: 50px;
       padding-bottom: 50px;
+      flex-wrap: wrap;
     }
   }
 }

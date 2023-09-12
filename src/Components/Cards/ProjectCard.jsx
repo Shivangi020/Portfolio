@@ -11,7 +11,6 @@ const ProjectCard = ({imageLink , detailId}) => {
   return (
     <div className='project-card'>
            <div className='img-cn'><img src={imageLink}></img>
-
            <div className='image-overlay'>
            <button onClick={()=>onClickAction(detailId)}>View Details</button>
            </div>

@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  transition: all 3ms;
-
+  z-index: -2;
+   
   a {
     color: $heading-color;
     font-size: 2.5em;

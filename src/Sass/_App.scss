@@ -1,44 +1,54 @@
-@import  'Variable';
+@import "Variable";
 
-
-*{
+* {
   box-sizing: border-box;
-  font-family: $heading-font
+  font-family: $heading-font;
 }
 
-html{
-  scroll-behavior: smooth;;
+html {
+  scroll-behavior: smooth;
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-main{
+main {
   height: 200vh;
 }
 
-
-.footer{
+.footer {
+  height: 300px;
   background-color: $background;
   color: $text-color;
   text-align: center;
-  padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: url(../assets/Background3.jpeg);
+  justify-content: flex-end;
+  align-items: center;
+  background: url(../assets/Background3.png);
   background-size: cover;
-  
-  
-  p{
-    margin: 0;
-    font-size: 19px;
-    letter-spacing: 0.05em;
-  }
+  background-position: left;
+  padding-bottom: 10px;
 
-  span{
-    margin-right: 5px;
-    align-self: baseline;
+  .copyright-div {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+
+    p {
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.075em;
+    }
+
+    span {
+      position: absolute;
+      left: -25px;
+      top: -1px;
+      font-size: 1.2em;
+    }
   }
 }

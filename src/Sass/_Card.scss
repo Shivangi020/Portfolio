@@ -1,27 +1,27 @@
-@import  'Variable';
-
+@import "Variable";
 
 // Skill card css
 .skill-card {
   border-radius: 10px;
-  background: $card-background;
   width: 300px;
   height: 380px;
   padding: 20px;
   text-align: center;
   border: 2px solid $avatar-border-color;
   z-index: 1;
-
-  .skill-icon{
+  backdrop-filter: blur(40px);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,.2);
+  .skill-icon {
     font-size: 3.3em;
     color: $icon-color;
-
   }
   p {
     margin-top: 5px;
     font-size: 2.125em;
     letter-spacing: 0.084em;
-    color:$heading-color;
+    color: $heading-color;
+    margin-bottom: 0;
   }
 
   ul {
@@ -33,28 +33,24 @@
   }
 }
 
-
-
 // Projects card css
-.project-card{
-
-  .img-cn{
+.project-card {
+  .img-cn {
     position: relative;
-   height: 300px;
-   width: 300px;
-   min-height: 220px;
-   min-width: 220px;
- 
+    height: 300px;
+    width: 300px;
+    min-height: 220px;
+    min-width: 220px;
   }
 
-  img{
+  img {
     cursor: pointer;
     height: 100%;
     width: 100%;
     border-radius: 5px;
   }
 
-  .image-overlay{
+  .image-overlay {
     width: 100%;
     height: 100%;
     background-color: $image-overlay-color;
@@ -65,21 +61,22 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    border: 2px solid $avatar-border-color;
     transition: all 0.8s;
-    letter-spacing: .003em;
+    letter-spacing: 0.003em;
     font-weight: 500;
-
-    button{
+    
+    button {
       cursor: pointer;
-      border: 2px solid white;
+      border: none;
       background-color: transparent;
       color: $text-color;
-      padding:  12px 35px;
-      font-size: .5em;
+      padding: 12px 35px;
+      font-size: 0.5em;
     }
   }
 
-  @media(hover:hover){
+  @media (hover: hover) {
     .image-overlay:hover {
       opacity: 15;
       font-size: 2em;
@@ -88,23 +85,46 @@
 
   // For Touch screen
   @media (hover: none) {
-    .image-overlay{
+    .image-overlay {
       height: 20%;
       background-color: $card-background;
       opacity: 10;
       bottom: 0;
-      top:calc(100% - 20%);
+      top: calc(100% - 20%);
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-
-      button{
+      
+      button {
         border: none;
         font-size: 1em;
         letter-spacing: 0.0012;
-  }
+      }
     }
+  }
+}
 
-   
+
+@media only screen and (max-width: 640px) {
+ 
+.skill-card{
+  width: 220px;
+  height: 300px;
+
+  p{
+   font-size: 1.7em;
   }
 
+  ul{
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+}
+
+
+.project-card{
+  .img-cn{
+    width: 250px;
+    height: 250px;
+  }
+}
 }
