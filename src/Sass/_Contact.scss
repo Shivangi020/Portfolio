@@ -5,7 +5,22 @@
   padding: 50px;
   color: $text-color;
   text-align: center;
+  position: relative;
 
+  .contact-popup {
+    position: absolute;
+    background-color: #fff;
+    background-color: #10384600;
+    backdrop-filter: blur(40px);
+    left: 30%;
+    right: 30%;
+    top: 0px;
+    bottom: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .contact-s {
     display: flex;
     justify-content: center;

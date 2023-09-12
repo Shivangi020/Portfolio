@@ -4,6 +4,7 @@ import Heading from "./Heading";
 
 const Contact = () => {
   const form = useRef();
+  const [popup , setPopup] = useState(false)
   const [isSending ,setIsSending] = useState(false)
   const [isSuccess , setIsSuccess] = useState(false);
   const [isError , setIsError] = useState(false);
@@ -11,7 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault(); 
     setIsSending(true);
-
+    setPopup(true)
     emailjs.sendForm(
         "service_ckui3z8",
         "template_yxe5bhz",
@@ -38,11 +39,11 @@ const Contact = () => {
         heading={"Your Feedback"}
         comment={"// Shaping the Future with Your Input"}
       />
-      <section className="contact-popup">
-      {isSending ? <p>Sending...</p>:<p></p>}
+    {  popup?<section className="contact-popup">
+      {isSending ?<p>Sending...</p>:<p></p>}
       {isError ? <p>Something went wrong</p>:<p></p>}
       {isSuccess ? <p>Great.. Will contact back soon</p>:<p></p>}
-      </section>
+      </section>:<></>}
 
       <section className="contact-s">
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
