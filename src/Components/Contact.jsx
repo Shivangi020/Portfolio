@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from 'emailjs-com';
 import Heading from "./Heading";
+import Error from "./MailResults/Error";
+import MailSuccess from "./MailResults/MailSuccess";
 
 const Contact = () => {
   const form = useRef();
@@ -30,6 +32,17 @@ const Contact = () => {
       );
   };
 
+
+  const successOnClick = ()=>{
+    setPopup(false)
+    setMailAction({...mailAction,isError:false,isSending:false,isSuccess:false})
+  }
+  
+  const errorOnClick = ()=>{
+    setPopup(false)
+    setMailAction({...mailAction,isError:false,isSending:false,isSuccess:false})
+  }
+
   return (
     <div className="contact-cn" id="Contact">
       <Heading
@@ -38,8 +51,8 @@ const Contact = () => {
       />
     {  popup?<section className="contact-popup">
       {mailAction.isSending ?<p>Sending...</p>:<p></p>}
-      {mailAction.isError ? <p>Something went wrong</p>:<p></p>}
-      {mailAction.isSuccess ? <p>Great.. Will contact back soon</p>:<p></p>}
+      {mailAction.isSuccess ?<MailSuccess successOnClick={successOnClick}/>:<></>}
+      {mailAction.isError ? <Error errorOnClick={errorOnClick}/>:<></>}
       </section>:<></>}
 
       <section className="contact-s">

@@ -75,3 +75,23 @@
     }
   }
 }
+
+
+.mail-res{
+ 
+   img{
+    width: 80px;
+   }
+
+   h3{
+    font-size: 1.6em;
+    letter-spacing: 0.143em;
+    font-family: $paragraph-font;
+    line-height: 0.5;
+   }
+   p{
+    font-size: 1.2em;
+    font-family: $paragraph-font;
+    line-height: 0.4;
+   }
+}
