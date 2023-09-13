@@ -3,12 +3,13 @@ import emailjs from 'emailjs-com';
 import Heading from "./Heading";
 import Error from "./MailResults/Error";
 import MailSuccess from "./MailResults/MailSuccess";
+import MailSending from './MailResults/MailSending';
 
 const Contact = () => {
   const form = useRef();
-  const [popup , setPopup] = useState(false)
+  const [popup , setPopup] = useState(true)
 
-  const [mailAction , setMailAction] = useState({isSending:false , isError:false , isSuccess:false})
+  const [mailAction , setMailAction] = useState({isSending:true , isError:false , isSuccess:false})
 
 
   const sendEmail = (e) => {
@@ -36,6 +37,7 @@ const Contact = () => {
   const successOnClick = ()=>{
     setPopup(false)
     setMailAction({...mailAction,isError:false,isSending:false,isSuccess:false})
+    
   }
   
   const errorOnClick = ()=>{
@@ -50,15 +52,15 @@ const Contact = () => {
         comment={"// Shaping the Future with Your Input"}
       />
     {  popup?<section className="contact-popup">
-      {mailAction.isSending ?<p>Sending...</p>:<p></p>}
+      {mailAction.isSending ?<MailSending/>:<p></p>}
       {mailAction.isSuccess ?<MailSuccess successOnClick={successOnClick}/>:<></>}
       {mailAction.isError ? <Error errorOnClick={errorOnClick}/>:<></>}
       </section>:<></>}
 
       <section className="contact-s">
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
-          <input type="text" name="from_name" placeholder="Name" required />
-          <input type="email" name="from_email" placeholder="Email" required />
+          <input type="text" name="from_name" placeholder="Name" required  />
+          <input type="email" name="from_email" placeholder="Email" required  />
           <textarea
             name="html_message"
             placeholder="Message"
