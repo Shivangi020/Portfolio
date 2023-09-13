@@ -50,8 +50,8 @@
       gap: 15px;
       background-color: $dark-background;
       border-radius: 10px;
-      box-shadow: 1px 3px #fffefc26;
-
+      box-shadow: 2px 5px #fffefc26;
+      transition: all 3ms cubic-bezier(.3,.04,.42,.59);
       a{
         color: $heading-color;
         font-size: 2em;
@@ -83,6 +83,11 @@
     }
     }
 
+  }
+
+  .links-on-about:hover{
+    box-shadow: none;
+    transform: scale(0.99);
   }
 
   // Skill section other css

@@ -49,58 +49,7 @@
     width: 100%;
     border-radius: 5px;
   }
-
-  .image-overlay {
-    width: 100%;
-    height: 100%;
-    background-color: $image-overlay-color;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid $avatar-border-color;
-    transition: all 0.8s;
-    letter-spacing: 0.003em;
-    font-weight: 500;
-    
-    button {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      color: $text-color;
-      padding: 12px 35px;
-      font-size: 0.5em;
-    }
-  }
-
-  @media (hover: hover) {
-    .image-overlay:hover {
-      opacity: 15;
-      font-size: 2em;
-    }
-  }
-
-  // For Touch screen
-  @media (hover: none) {
-    .image-overlay {
-      height: 20%;
-      background-color: $card-background;
-      opacity: 10;
-      bottom: 0;
-      top: calc(100% - 20%);
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      
-      button {
-        border: none;
-        font-size: 1em;
-        letter-spacing: 0.0012;
-      }
-    }
-  }
+  
 }
 
 
