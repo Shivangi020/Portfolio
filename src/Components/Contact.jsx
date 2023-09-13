@@ -7,9 +7,9 @@ import MailSending from './MailResults/MailSending';
 
 const Contact = () => {
   const form = useRef();
-  const [popup , setPopup] = useState(true)
+  const [popup , setPopup] = useState(false)
 
-  const [mailAction , setMailAction] = useState({isSending:true , isError:false , isSuccess:false})
+  const [mailAction , setMailAction] = useState({isSending:false , isError:false , isSuccess:false})
 
 
   const sendEmail = (e) => {
