@@ -10,8 +10,11 @@ const ProjectCard = ({imageLink }) => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Nisi voluptatum exercitationem ipsam consequatur itaque a
               rchitecto quam hic nulla at natus mollitia quidem, e cumque.</p>
-           <a href='#' target='_blank'>Read Me</a>
+              <div>
+              <a href='#' target='_blank' >Read Me</a>
            <a href='#' target='_blank'>Visit</a>
+              </div>
+    
     </div>
   )
 }

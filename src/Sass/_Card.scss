@@ -35,23 +35,20 @@
 
 // Projects card css
 .project-card {
-
-  border: 3px solid $avatar-border-color;
   border-radius: 10px;
   height: 460px;
   background-color: $dark-background;
-  box-shadow: 3px 5px #bbb8b8;
+  backdrop-filter: drop-shadow(2px 4px 6px black);
   .img-cn {
     position: relative;
     height: 200px;
-    border-top-right-radius:5px ;
-    border-top-left-radius: 5px;
+    padding-top: 20px;
   }
 
   img {
     cursor: pointer;
     height: 100%;
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     border-radius: inherit;
   }
@@ -59,15 +56,35 @@
   h3{
     font-weight: 400;
     color: $heading-color;
+    font-size: 1.563em;
   }
   p{
     font-family: $paragraph-font;
     font-weight: 300;
     line-height: 1.4em;
+    text-align: justify;
+    padding: 0 20px;
+    margin-bottom: 30px;
   }
-  .stack-div{
-    display: flex;
+  
+  a{
+    height: fit-content;
+    border: 2px solid $heading-color;
+    font-size: 1em;
+    letter-spacing: 0.088em;
+    padding: 5px 10px;
+    margin: 30px 10px;
+    text-decoration: none;
+    color: $heading-color;
+    transition: all 3ms cubic-bezier(.3,.04,.42,.59);
+   
   }
+
+  a:hover::before{
+    content: "git";
+  }
+
+  
   
 }
 
