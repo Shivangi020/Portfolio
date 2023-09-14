@@ -57,31 +57,39 @@
     font-weight: 400;
     color: $heading-color;
     font-size: 1.563em;
+    margin-bottom: 0;
   }
   p{
     font-family: $paragraph-font;
     font-weight: 300;
     line-height: 1.4em;
-    text-align: justify;
-    padding: 0 20px;
+    text-align: center;
+    padding: 0 25px;
     margin-bottom: 30px;
+    margin-top: 0;
   }
   
+  .link-on-project{
+    display: flex;
+justify-content: center;
+  }
   a{
+    cursor: pointer;
+    display: block;
     height: fit-content;
     border: 2px solid $heading-color;
     font-size: 1em;
     letter-spacing: 0.088em;
     padding: 5px 10px;
-    margin: 30px 10px;
+    margin: 5px 10px;
     text-decoration: none;
     color: $heading-color;
-    transition: all 3ms cubic-bezier(.3,.04,.42,.59);
+    transition: all 300ms ease-in;
    
   }
 
-  a:hover::before{
-    content: "git";
+  a:hover{
+    transform: scale(1.1);
   }
 
   
