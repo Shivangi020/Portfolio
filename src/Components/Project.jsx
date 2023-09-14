@@ -11,10 +11,10 @@ const Project = () => {
     <div className='project-cn' id='Project'>
          <Heading heading='Projects' comment='// Crafting Code, Shaping Experiences'/>
          <section className='project-card-cn'>
-          <ProjectCard imageLink={project1} detailId={0}/>
-          <ProjectCard imageLink={project2} detailId={1}/>
-          <ProjectCard imageLink={project3} detailId={2}/>
-          <ProjectCard imageLink={project4} detailId={3}/>
+          <ProjectCard imageLink={project1}/>
+          <ProjectCard imageLink={project2}/>
+          <ProjectCard imageLink={project3}/>
+          <ProjectCard imageLink={project4}/>
          </section>
     </div>
   )

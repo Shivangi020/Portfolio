@@ -35,19 +35,38 @@
 
 // Projects card css
 .project-card {
+
+  border: 3px solid $avatar-border-color;
+  border-radius: 10px;
+  height: 460px;
+  background-color: $dark-background;
+  box-shadow: 3px 5px #bbb8b8;
   .img-cn {
     position: relative;
-    height: 300px;
-    width: 300px;
-    min-height: 220px;
-    min-width: 220px;
+    height: 200px;
+    border-top-right-radius:5px ;
+    border-top-left-radius: 5px;
   }
 
   img {
     cursor: pointer;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  h3{
+    font-weight: 400;
+    color: $heading-color;
+  }
+  p{
+    font-family: $paragraph-font;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+  .stack-div{
+    display: flex;
   }
   
 }
